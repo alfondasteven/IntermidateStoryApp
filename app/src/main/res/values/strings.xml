@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IntermidateStoryApp</string>
+    <string name="signup">Register</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">Save Your Memories With Dicoding Story App</string>
+    <string name="title_welcome_page">Welcome to Dicoding Story App</string>
+    <string name="title_register_page">Please Fill Out Your Data</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Insert Email and Password! </string>
+    <string name="title_login_page">Ready to Save Your Memories With Dicoding Story App?</string>
+    <string name="name">Name</string>
+    <string name="message_main_page">Lets Create Your Memories With Us.</string>
+    <string name="greeting">Hello %1$s</string>
+    <string name="logout">Log out</string>
+    <string name="story">Create Story</string>
+    <string name="list">List Story</string>
+    <string name="detail">Detail</string>
+    <string name="camera">Camera</string>
+    <string name="galery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="deskripsi">Description</string>
+    <string name="nama">Nama</string>
+    <string name="Hi">Hi, %1$s!</string>
+    <string name="remember">Save Login Info</string>
+    <string name="create_at">Create at</string>
+    <string name="already">Already have an account? Click Here!</string>
+    <string name="name_app">Story App by Golden</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps">Maps</string>
+    <string name="retry">retry</string>
+</resources>

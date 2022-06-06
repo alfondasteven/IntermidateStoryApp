@@ -1,0 +1,62 @@
+package com.fonda.intermidatestoryapp.ui.customview
+
+import android.content.Context
+import android.graphics.Canvas
+import android.graphics.drawable.Drawable
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.AttributeSet
+import android.view.View
+import android.widget.Toast
+import androidx.appcompat.widget.AppCompatEditText
+import androidx.core.content.ContextCompat
+import com.fonda.intermidatestoryapp.R
+
+class EmailEditText : AppCompatEditText {
+    private lateinit var errorBackground: Drawable
+    private lateinit var roundedBackground: Drawable
+
+    constructor(context: Context) : super(context) {
+        init()
+    }
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+        init()
+    }
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+        init()
+    }
+
+    private fun init() {
+        errorBackground = ContextCompat.getDrawable(context, R.drawable.corners_error) as Drawable
+        roundedBackground = ContextCompat.getDrawable(context, R.drawable.corners) as Drawable
+    }
+
+    override fun onDraw(canvas: Canvas?) {
+        super.onDraw(canvas)
+        hint = "Email"
+
+        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+        addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                background =
+                    if(android.util.Patterns.EMAIL_ADDRESS.matcher(p0!!).matches() || p0.isEmpty()) roundedBackground
+                    else errorBackground
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+
+        })
+        onFocusChangeListener = OnFocusChangeListener { p0, p1 ->
+            if(!p1 && background == errorBackground) {
+                showErrorToast()
+            }
+        }
+    }
+    private fun showErrorToast() {
+        Toast.makeText(context, "Invalid Email Formats", Toast.LENGTH_SHORT).show()
+    }
+}

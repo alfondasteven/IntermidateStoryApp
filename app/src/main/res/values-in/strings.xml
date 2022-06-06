@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntermidateStoryApp</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Simpan Kenangan mu Bersama Dicoding Story App</string>
+    <string name="title_welcome_page">Selamat Datang di Dicoding Story App</string>
+    <string name="title_register_page">Isi Data Diri mu Dengan Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan Email dan Password!</string>
+    <string name="title_login_page">Sudah Siap Menyimpan Kenanganmu Bersama Dicoding Story App?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Membuat Kenangan Bersama Kami.</string>
+    <string name="greeting">Halo %1$s</string>
+    <string name="logout">Log out</string>
+    <string name="story">Buat Kenangan</string>
+    <string name="list">List Kenangan</string>
+    <string name="detail">Detail</string>
+    <string name="camera">Kamera</string>
+    <string name="galery">Gallery</string>
+    <string name="upload">Unggah</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="nama">Nama</string>
+    <string name="Hi">Hi, %1$s!</string>
+    <string name="remember">Simpan Informasi Login</string>
+    <string name="create_at">Dibuat pada</string>
+    <string name="already">Sudah Memiliki Akun? Klik Disini!</string>
+</resources>
